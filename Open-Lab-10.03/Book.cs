@@ -22,7 +22,7 @@ namespace Open_Lab_10._03
             get => relaseDate;
             set
             {
-                if((value > 2021) && (value < 1450))
+                if((value >= 2021) || (value <= 1450))
                 {
                     relaseDate = -1;
                 }
@@ -40,11 +40,11 @@ namespace Open_Lab_10._03
 
         public void Vypis()
         {
-            Console.WriteLine("Category: " + category);
-            Console.WriteLine("Author: " + author);
-            Console.WriteLine("Title: " + title);
-            Console.WriteLine("Relase date: " + relaseDate);
-            Console.WriteLine("number of pages: " + pages);
+            Console.WriteLine("Category: " + Category);
+            Console.WriteLine("Author: " + Author);
+            Console.WriteLine("Title: " + Title);
+            Console.WriteLine("Relase date: " + RelaseDate);
+            Console.WriteLine("number of pages: " + Pages);
         }
     }
 }
