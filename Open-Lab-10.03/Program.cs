@@ -16,7 +16,6 @@ namespace Open_Lab_10._03
             LOTR.Category = "epic high-fantasy novel";
             LOTR.Pages = 1172;
             LOTR.RelaseDate = 25;
-
             LOTR.Vypis();
         }
     }

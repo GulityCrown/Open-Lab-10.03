@@ -15,9 +15,17 @@ namespace Open_Lab_10._03
         private string author;
         private int relaseDate;
         private int pages;
-        public string Title { get; set; }
-        public string Category { get; set; }
-        public string Author { get; set; }
+        public string Title { get { return title; } set { title = value; } }
+        public string Category
+        {
+            get { return category; }
+            set { category = value; }
+        }
+        public string Author
+        {
+            get { return author; }
+            set { author = value; }
+        }
         public int RelaseDate {
             get => relaseDate;
             set
@@ -33,18 +41,24 @@ namespace Open_Lab_10._03
             }
         
         } 
-        public int Pages { get; set; }
+        public int Pages 
+        {
+            get { return pages; }
+            set { 
+                pages = value;
+            } 
+        }
         public Book() { }
         
 
 
         public void Vypis()
         {
-            Console.WriteLine("Category: " + Category);
-            Console.WriteLine("Author: " + Author);
-            Console.WriteLine("Title: " + Title);
-            Console.WriteLine("Relase date: " + RelaseDate);
-            Console.WriteLine("number of pages: " + Pages);
+            Console.WriteLine("Category: " + category);
+            Console.WriteLine("Author: " + author);
+            Console.WriteLine("Title: " + title);
+            Console.WriteLine("Relase date: " + relaseDate);
+            Console.WriteLine("number of pages: " + pages);
         }
     }
 }
