@@ -13,12 +13,26 @@ namespace Open_Lab_10._03
         private string title;
         private string category;
         private string author;
-        private string relaseDate;
+        private int relaseDate;
         private int pages;
         public string Title { get; set; }
         public string Category { get; set; }
         public string Author { get; set; }
-        public string RelaseDate { get; set; }
+        public int RelaseDate {
+            get => relaseDate;
+            set
+            {
+                if((value > 2021) && (value < 1450))
+                {
+                    relaseDate = -1;
+                }
+                else
+                {
+                    relaseDate = value;
+                }
+            }
+        
+        } 
         public int Pages { get; set; }
         public Book() { }
         

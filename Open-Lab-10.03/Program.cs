@@ -15,7 +15,7 @@ namespace Open_Lab_10._03
             LOTR.Author = "J.J.R.Tolkien";
             LOTR.Category = "epic high-fantasy novel";
             LOTR.Pages = 1172;
-            LOTR.RelaseDate = "29th July 1954";
+            LOTR.RelaseDate = 1954;
 
             LOTR.Vypis();
         }
